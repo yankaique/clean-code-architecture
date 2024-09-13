@@ -1,0 +1,12 @@
+## Code smells
+
+- nomenclatura
+- números mágicos
+- linhas em branco
+- código duplicado
+- código morto
+- comentários
+- extrair método 
+- váriaveis declaradas longe da utilização 
+- espaçamento
+- condições confusas
