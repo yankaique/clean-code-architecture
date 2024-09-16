@@ -15,7 +15,6 @@ export function validateCpf (rawCPF: string) {
 			sumOf11Digits += calculateNumberWithDigit({size: cpfSize + 1, position, digit });  
 		};  
 		const restOfFirst10Digits = verifyRestIsMaiorThan2(sumOf10Digits);  
-		console.log(restOfFirst10Digits);
 		const multiplicationWithFirstDigit = sumOf11Digits + (2 * restOfFirst10Digits);  
 		const restOfFirst11Digits = verifyRestIsMaiorThan2(multiplicationWithFirstDigit);
 		const digitsResult = "" + restOfFirst10Digits + "" + restOfFirst11Digits;  
