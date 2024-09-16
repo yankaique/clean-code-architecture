@@ -3,7 +3,7 @@ import pgp from "pg-promise";
 import { validateCpf } from "./validateCpf";
 
 export async function signup (input: any): Promise<any> {
-	const connection = pgp()("postgres://postgres:admin123@localhost:5432/app");
+	const connection = pgp()("postgres://postgres:admin123@localhost:5432/postgres");
 	try {
 		const id = crypto.randomUUID();
 
