@@ -1,6 +1,6 @@
 import { signup } from '../src/signup';
 
-test("Should find the email", async () => {
+test("Should email exist", async () => {
     const existedUserInformation = {
         email: "yankaiquecosta.yk@gmail.com",
         name: "John Doe",
@@ -9,11 +9,12 @@ test("Should find the email", async () => {
         isPassenger: true,
         isDriver: true,
     }
+
     const numberError = await signup(existedUserInformation);
     expect(numberError).toBe(-4);
 });
 
-test("Should name is valid", async () => {
+test("Should name is invalid", async () => {
     const existedUserInformation = {
         email: "yan@gmail.com",
         name: "A12312312 12 3124123",
@@ -63,10 +64,5 @@ test("Should plate is invalid", async () => {
         isDriver: true,
     }
     const numberError = await signup(existedUserInformation)
-    expect(numberError).toBe(-5)
+    expect(numberError).toBe(-5);
 })
-
-// cpf
-// email
-// name
-// exists
