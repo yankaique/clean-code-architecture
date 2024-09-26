@@ -1,6 +1,6 @@
 import { getAccountById, signup } from '../src/signup';
 
-test.only("Deve criar uma conta de passageiro", async () => {
+test("Deve criar uma conta de passageiro", async () => {
     const inputSignup = {
         email: `yankaiquecosta.yk${Math.random()}@gmail.com`,
         name: "John Doe",
